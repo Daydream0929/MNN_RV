@@ -17,7 +17,7 @@ public:
 protected:
     bool mNCHW;
     CSINN2Backend* mCSINN2Backend;
-    const Op* mop;
+    const Op* mOp;
     std::vector<uint32_t> getTensorIdxs(const std::vector<Tensor*>& tensors);
 };
 
