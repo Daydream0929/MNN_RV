@@ -341,11 +341,7 @@ namespace MNN {
         }
     };
 
-    void registerNNAPIRuntimeCreator() {
-        if (!loadNNAPISymbol()) {
-            return;
-        }
-        registerNNAPIOps();
-        MNNInsertExtraRuntimeCreator(MNN_FORWARD_NN, new NNAPIBackendCreator, false);
+    void registerCSINN2RuntimeCreator() {
+
     }
 }

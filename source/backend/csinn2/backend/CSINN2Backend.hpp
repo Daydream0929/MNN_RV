@@ -96,7 +96,7 @@ public:
     }
 };
 
-#define REGISTER_NNAPI_OP_CREATOR(name, opType)     \
+#define REGISTER_CSINN2_OP_CREATOR(name, opType)     \
     void ___##name##__##opType##__() {            \
         static TypedCreator<name> _temp;\
         CSINN2Backend::addCreator(opType, &_temp); \
